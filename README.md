@@ -67,4 +67,8 @@ Forum diskusi
 ## Hosting
 
 
-
+## Referensi
+[Official web Flarum](https://flarum.org/)
+[Github Flarum](https://github.com/flarum/framework)
+[Flarum documentations](https://docs.flarum.org/install/)
+[Cara instalasi](https://www.youtube.com/watch?v=hqbG_SGo4go)
