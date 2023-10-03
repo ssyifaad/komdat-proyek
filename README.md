@@ -33,6 +33,7 @@ Forum diskusi
 - Apache (dengan mengaktifkan mod_rewrite) atau Nginx
 - PHP 7.3+ dengan extensions: curl, dom, fileinfo, gd, json, mbstring, openssl, pdo_mysql, tokenizer, zip
 - MySQL 5.6+/8.0.23+ atau MariaDB 10.0.5+
+- Composer
 - SSH (command-line) untuk menjalankan Composer
 - XAMPP 8.1.0
 
