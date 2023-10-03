@@ -42,10 +42,12 @@ Forum diskusi
     ```
     cd xampp/htdocs
     ```
+
 2. Jalankan perintah composer untuk menginstal flarum
     ```
     composer create-project flarum/flarum
     ```
+
 3. Buat database MySQL baru untuk project flarum
     - Pastikan Apache dan MySQL pada XAMPP Control Panel sudah diaktifkan
     - Kunjungi URL http://localhost/phpmyadmin/
@@ -64,7 +66,126 @@ Forum diskusi
 7. Save changes
 
 
-## Hosting
+## Virtual Private Server
 
+1. Setup VM menggunakan layanan VPS Digital Ocean
+    - Sign up/Sign in dengan akun yang sesuai
+    - Buat project baru dan beri nama sesuai atau gunakan *first-project* yang sudah otomatis dibuat ketika membuat akun
+    ![Screenshot 2023-10-03 113107](https://github.com/ssyifaad/komdat-proyek/assets/20938858/82a2e6b9-8d97-4fa5-bda2-5f9acb0ea604)
 
+    - Buat droplet (VM) baru dengan spesifikasi yang diinginkan (pada contoh menggunakan Ubuntu 22.04 LTS)
+    ![Screenshot 2023-10-03 113245](https://github.com/ssyifaad/komdat-proyek/assets/20938858/434e3342-e3dd-4a1c-9591-8bb732142eea)
 
+2. Buka terminal dan connect ke VPS dengan root menggunakan ```ssh``` IP Address yang disediakan VPS dan masukan password
+    ```
+    $ ssh root@IPaddress
+    ```
+
+3. Tambah user baru
+    ```
+    $ sudo adduser [username]
+    ```
+
+4. Berikan hak administratif kepada user kemudian logout
+    ```
+    $ sudo usermod -aG sudo [username]
+    $ logout
+    ```
+
+5. Connect ssh dengan user dan masukan password user
+
+    ```
+    $ ssh user@IPAddrress
+    ```
+
+6. Jalankan system update untuk update package list
+    ```
+    $ sudo apt update && sudo apt upgrade
+    ```
+
+7. Install Apache dan MariaDB menggunakan APT package manager
+    ```
+    $ sudo apt-get install apache2 mariadb-server mariadb-client
+    ```
+
+8. Configure MariaDB
+    ```
+    $ sudo mysql_secure_installation
+    > Enter current password: Tekan ENTER
+    > Create new password: Y
+    > Jawab Y untuk seluruh pertanyaan setelahnya
+    ```
+
+9. Buat Database baru
+    ```
+    $ mysql -u root -p
+    > create database nama_db;
+    ```
+
+10. Buat VHost baru beserta directorynya
+    ```
+    $ sudo mkdir -p /var/www/flarum
+    $ sudo chown -R root:root /var/www/flarum
+    ```
+
+11. Buat file conf
+    ```
+    $ sudo chown -R root:root /var/www/**yourdomain.com**
+    ```
+    lalu tambahkan baris berikut:
+    ```
+    <VirtualHost *:80>
+    ServerAdmin example@email.com
+    ServerName flarum
+    ServerAlias flarum
+    DocumentRoot /var/www/flarum
+    <Directory "/var/www/flarum">
+    AllowOverride All
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    </VirtualHost>
+    ```
+
+12. Install PHP 8.1 beserta extension yang dibutuhkan
+    ```
+    $ sudo add-apt-repository ppa:ondrej/php
+
+    $ sudo apt install php8.1 libapache2-mod-php8.1 php8.1-common php8.1-mbstring php8.1-curl php8.1-xmlrpc php8.1-soap php8.1-gd php8.1-xml php8.1-intl php8.1-mysql php8.1-cli php8.1-mcrypt php8.1-zip php8.1-curl php8.1-dom composer openssl
+    ```
+
+13. Install composer
+    ```
+    sudo apt install composer
+    ```
+
+14. CD ke directory var/www/flarum dan run composer, pastikan isi directory kosong
+    ```
+    $ cd /var/www/**yourdomain.com**
+
+    $ composer create-project flarum/flarum . --stability=beta
+    ```
+
+15. Enable VHost dan mod_rewrite
+    ```
+    $ sudo a2ensite flarum
+    $ sudo a2enmod rewrite
+    $ sudo a2dissite 000-default.conf
+    $ sudo systemctl restart apache2
+    ```
+
+16. Fix permission
+    ```
+    $ sudo chmod -R 777 /var/www/flarum
+    ```
+
+17. Setup Install Flarum dengan mengunjungi URL http://IPAddress_VPS/public/
+![Screenshot 2023-10-03 103452](https://github.com/ssyifaad/komdat-proyek/assets/20938858/a19bf745-b383-4b4d-b345-73117219ec92)
+![image](https://github.com/ssyifaad/komdat-proyek/assets/20938858/ba6e80cb-871a-47e6-b5c6-8c0275021f77)
+
+18. Masuk ke menu *administration*
+![Screenshot 2023-10-03 111223](https://github.com/ssyifaad/komdat-proyek/assets/20938858/ed97eca7-fd3f-4c5b-83eb-347b3c43c4e4)
+
+19. Setup email driver menggunakan *Simple mail transfer protocol* (SMTP)
+![Screenshot 2023-10-03 112107](https://github.com/ssyifaad/komdat-proyek/assets/20938858/51cebdd4-9816-4c30-b3d0-516895197971)
+
+20. Save changes
