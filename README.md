@@ -134,7 +134,7 @@ Forum diskusi
 
 11. Buat file conf
     ```
-    $ sudo chown -R root:root /var/www/**yourdomain.com**
+    $ sudo nano /etc/apache2/sites-available/flarum.conf
     ```
     lalu tambahkan baris berikut:
     ```
