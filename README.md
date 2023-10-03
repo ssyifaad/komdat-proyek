@@ -7,8 +7,11 @@
 4. G6401211006	Muhammad Naufal Daffa Salim
 
 ## Aplikasi Web "Flarum"
-<img width="887" alt="image" src="https://github.com/ssyifaad/komdat-proyek/assets/56620851/a1469ff7-5fd8-4ebd-9ecd-8b4d0b500e1d"> <br>
-**[Flarum](https://flarum.org/)** merupakan sebuah aplikasi berbasis web untuk membuat forum diskusi. Seperti yang terdapat pada screenshot di bawah ini yang merupakan tampilan halaman utama dari web Flarum yang diambil dari web resminya. <br>
+![image](https://github.com/ssyifaad/komdat-proyek/assets/56620851/8e0bc07e-6aef-49fd-b9d9-27f53a6c3610)<br>
+
+<br>**[Flarum](https://flarum.org/)** merupakan sebuah aplikasi berbasis web untuk membuat forum diskusi. Seperti yang terdapat pada screenshot di bawah ini yang merupakan tampilan halaman utama dari web Flarum yang diambil dari web resminya.
+<br>
+
 ![image](https://github.com/ssyifaad/komdat-proyek/assets/56620851/be2e8535-19d3-456c-b5f8-c8509867e6a8)
 
 ## Fitur
