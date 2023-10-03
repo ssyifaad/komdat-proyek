@@ -37,7 +37,31 @@ Forum diskusi
 - SSH (command-line) untuk menjalankan Composer
 - XAMPP 8.1.0
 
-## Instalasi
+## Local Server
+1. Ubah direktori ke tempat yang digunakan untuk menyimpan project (pada contoh digunakan folder htdocs di xampp)
+    ```
+    cd xampp/htdocs
+    ```
+2. Jalankan perintah composer untuk menginstal flarum
+    ```
+    composer create-project flarum/flarum
+    ```
+3. Buat database MySQL baru untuk project flarum
+    - Pastikan Apache dan MySQL pada XAMPP Control Panel sudah diaktifkan
+    - Kunjungi URL http://localhost/phpmyadmin/
+    - Buat new database dan beri nama yang sesuai
+
+4. Setup Install Flarum dengan mengunjungi URL http://localhost/flarum/public/
+![Screenshot 2023-10-03 104309](https://github.com/ssyifaad/komdat-proyek/assets/20938858/c26b3721-2332-47a8-8540-346c825d502e)
+![image](https://github.com/ssyifaad/komdat-proyek/assets/20938858/ba6e80cb-871a-47e6-b5c6-8c0275021f77)
+
+5. Masuk ke menu *administration*
+![Screenshot 2023-10-03 111223](https://github.com/ssyifaad/komdat-proyek/assets/20938858/ed97eca7-fd3f-4c5b-83eb-347b3c43c4e4)
+
+6. Setup email driver menggunakan *Simple mail transfer protocol* (SMTP)
+![Screenshot 2023-10-03 112107](https://github.com/ssyifaad/komdat-proyek/assets/20938858/51cebdd4-9816-4c30-b3d0-516895197971)
+
+7. Save changes
 
 
 ## Hosting
