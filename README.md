@@ -68,7 +68,7 @@ Forum diskusi
 
 
 ## Referensi
-[Official web Flarum](https://flarum.org/)
-[Github Flarum](https://github.com/flarum/framework)
-[Flarum documentations](https://docs.flarum.org/install/)
-[Cara instalasi](https://www.youtube.com/watch?v=hqbG_SGo4go)
+[Official web Flarum](https://flarum.org/) <br>
+[Github Flarum](https://github.com/flarum/framework) <br>
+[Flarum documentations](https://docs.flarum.org/install/) <br>
+[Youtube tutorial instalasi](https://www.youtube.com/watch?v=hqbG_SGo4go) 
