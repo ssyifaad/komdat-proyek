@@ -189,3 +189,9 @@ Forum diskusi
 ![Screenshot 2023-10-03 112107](https://github.com/ssyifaad/komdat-proyek/assets/20938858/51cebdd4-9816-4c30-b3d0-516895197971)
 
 20. Save changes
+
+## Referensi
+[Official web Flarum](https://flarum.org/) <br>
+[Github Flarum](https://github.com/flarum/framework) <br>
+[Flarum documentations](https://docs.flarum.org/install/) <br>
+[Youtube tutorial instalasi](https://www.youtube.com/watch?v=hqbG_SGo4go) 
