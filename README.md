@@ -6,8 +6,9 @@
 3. G6401211051	Muhammad Ikhlash				
 4. G6401211006	Muhammad Naufal Daffa Salim
 
-## Deskripsi Web App "Flarum"
-**[Flarum](https://flarum.org/)** merupakan sebuah aplikasi berbasis web untuk membuat forum diskusi. Seperti yang terdapat pada screenshot di bawah ini yang merupakan tampilan halaman utama dari web Flarum yang diambil dari web resminya
+## Aplikasi Web "Flarum"
+<img width="887" alt="image" src="https://github.com/ssyifaad/komdat-proyek/assets/56620851/a1469ff7-5fd8-4ebd-9ecd-8b4d0b500e1d"> <br>
+**[Flarum](https://flarum.org/)** merupakan sebuah aplikasi berbasis web untuk membuat forum diskusi. Seperti yang terdapat pada screenshot di bawah ini yang merupakan tampilan halaman utama dari web Flarum yang diambil dari web resminya. <br>
 ![image](https://github.com/ssyifaad/komdat-proyek/assets/56620851/be2e8535-19d3-456c-b5f8-c8509867e6a8)
 
 ## Fitur
@@ -189,6 +190,28 @@ Forum diskusi
 ![Screenshot 2023-10-03 112107](https://github.com/ssyifaad/komdat-proyek/assets/20938858/51cebdd4-9816-4c30-b3d0-516895197971)
 
 20. Save changes
+
+## Kelebihan dan Kekurangan
+### Kelebihan
+**1. Antarmuka yang Modern** <br>
+Flarum memiliki antarmuka pengguna yang modern, bersih, dan intuitif.<br>
+**2.Ringan dan Cepat**<br>
+Flarum dirancang dengan fokus pada kinerja dan kecepatan. Ini membuatnya sangat responsif dan cocok untuk penggunaan pada berbagai perangkat<br>
+**3. Notifikasi dan Aktivitas Terbaru**<br>
+Pengguna dapat menerima notifikasi real-time tentang tanggapan, pesan pribadi, atau aktivitas lainnya di forum, membuat pengalaman berpartisipasi lebih interaktif.<br>
+**4. Fleksibel dan dapat disesuaikan**<br>
+Flarum memiliki sistem ekstensi yang kuat, sehingga pengguna dapat menyesuaikan platform sesuai dengan kebutuhan mereka<br>
+
+### Kekurangan
+**1. Keterbatasan ekstensi** <br>
+Jumlah ekstensi yang tersedia masih terbatas dibandingkan dengan platform diskusi lainnya <br>
+**2. Fitur-fitur yang masih terbatas** <br>
+Flarum masih dalam pengembangan, sehingga fitur-fitur yang tersedia masih terbatas. Namun, tim pengembang Flarum terus menambahkan fitur-fitur baru ke dalam platform ini <br>
+**3. Komunitas pengguna yang masih kecil** <br>
+Komunitas pengguna Flarum masih kecil dibandingkan dengan platform forum web lainnya. Hal ini dapat menyebabkan kesulitan dalam menemukan informasi atau bantuan <br>
+
+## Kesimpulan
+Flarum adalah aplikasi web forum diskusi antarmuka yang mudah digunakan. Ia memiliki fitur dasar seperti login, pembuatan forum, dan notifikasi. Flarum memiliki kelebihan berupa fleksibilitas, ringan, dan cepat, tetapi flarum masih memiliki keterbatasan fitur dan komunitas pengguna yang relatif kecil. Secara keseluruhan, Flarum adalah solusi forum diskusi yang menjanjikan, terutama bagi pengguna yang mencari platform yang ringan dan mudah digunakan.
 
 ## Referensi
 [Official web Flarum](https://flarum.org/) <br>
