@@ -164,7 +164,7 @@ Forum diskusi
 
 14. CD ke directory var/www/flarum dan run composer, pastikan isi directory kosong
     ```
-    $ cd /var/www/**yourdomain.com**
+    $ cd /var/www/flarum
 
     $ composer create-project flarum/flarum . --stability=beta
     ```
